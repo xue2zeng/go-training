@@ -20,7 +20,7 @@ jobs:
     - name: Install Go ${{ matrix.go-version }}
       uses: actions/setup-go@v1
       with:
-        version: ${{ matrix.go-version }}
+        go-version: ${{ matrix.go-version }}
       id: go
 
     - name: Check out code into the Go module directory
